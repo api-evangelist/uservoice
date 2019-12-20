@@ -1,0 +1,96 @@
+{
+    "name": "UserVoice",
+    "description": "Product management software that transforms how businesses capture and analyze feedback to prioritize the roadmap and make strategic product decisions.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/86-uservoice.jpg",
+    "tags": [
+        "customers",
+        "feedback",
+        "forums",
+        "have api",
+        "relative data",
+        "service api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uservoice\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "The Noun Project User API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/86-uservoice.jpg",
+            "humanURL": "http:\/\/\/user",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/the-noun-project-user-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/the-noun-project-user-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "https:\/\/uservoice.com\/api\/"
+        },
+        {
+            "type": "Blog",
+            "url": "https:\/\/community.uservoice.com\/blog\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/feeds.feedburner.com\/UnderstandingYourCustomers"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/uservoice"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/uservoice"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/developer.uservoice.com\/"
+        },
+        {
+            "type": "Email",
+            "url": "privacy@uservoice.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/marcusnelson"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/uservoice"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/www.uservoice.com\/plans\/product-management\/"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/www.uservoice.com\/plans\/customer-support\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/uservoice"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/uservoice.com\/"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/\/user"
+        }
+    ]
+}

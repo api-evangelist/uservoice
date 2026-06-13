@@ -1,0 +1,53 @@
+name: UserVoice API Rate Limits
+description: Rate limiting specifications for the UserVoice Admin API v2. UserVoice enforces per-minute request limits that vary by subscription plan. Long-running requests (exceeding 1 second of processing time) consume additional rate limit credits equal to the number of whole seconds of processing time.
+specificationVersion: '0.1'
+url: https://developer.uservoice.com/docs/api/v2/getting-started/
+rateLimits:
+  - name: Admin API v2 Rate Limit
+    description: Per-minute rate limit applied to all requests to the UserVoice Admin API v2. Limits vary by subscription plan.
+    type: requests-per-minute
+    window: 60
+    windowUnit: seconds
+    limitVariableByPlan: true
+    headers:
+      - name: X-Rate-Limit-Limit
+        description: The total number of requests available per minute for the current plan
+        type: integer
+      - name: X-Rate-Limit-Remaining
+        description: The number of requests remaining in the current rate limit window
+        type: integer
+      - name: X-Rate-Limit-Reset
+        description: Unix epoch timestamp indicating when the rate limit window resets
+        type: unix-timestamp
+      - name: Retry-After
+        description: Unix epoch timestamp indicating when the client may retry after being rate limited
+        type: unix-timestamp
+    errorResponse:
+      httpStatusCode: 429
+      description: Returned when the rate limit is exceeded. Client should wait until the time specified in the Retry-After header before retrying.
+    requestWeighting:
+      standard: 1
+      description: Standard requests count as 1 against the rate limit. Requests that take longer than 1 second to process consume additional credits equal to the number of whole seconds of processing time beyond the first second.
+  - name: Helpdesk API v1 Rate Limit
+    description: Rate limiting for the UserVoice Helpdesk API v1. Uses OAuth 1.0a authentication with API key-based access controls.
+    type: requests-per-minute
+    window: 60
+    windowUnit: seconds
+    limitVariableByPlan: true
+    notes:
+      - Unauthenticated requests are rate limited more strictly than authenticated requests
+      - 2-Legged OAuth (admin/client-based) may have different limits than 3-Legged OAuth (user-based)
+pagination:
+  defaultPageSize: 20
+  maximumPageSize: 100
+  cursorBased:
+    description: Preferred pagination method. Provides consistent performance and reliability, ideal for large datasets.
+    recommended: true
+  pageBased:
+    description: Traditional offset-based pagination. Performance degrades with deeper result sets.
+    recommended: false
+fileUpload:
+  maximumFileSize: 50000000
+  maximumFileSizeUnit: bytes
+  maximumFileSizeMB: 50
+  process: Two-step upload via multipart/form-data, then link attachment token to suggestions or notes

@@ -1,0 +1,102 @@
+name: UserVoice Plans and Pricing
+description: Pricing plans for the UserVoice product feedback and ideation platform. UserVoice offers subscription-based plans with no per-seat charges, billed quarterly or annually. A 30-day free trial is available. All plans include core feedback management features with variations in user capacity, integrations, and portal access.
+specificationVersion: '0.1'
+url: https://www.uservoice.com/pricing/
+plans:
+  - name: Pro
+    description: Entry-level plan for teams collecting customer feedback from a web portal and in-app widget. Includes status notifications for idea updates.
+    url: https://www.uservoice.com/pricing/
+    price: 999.00
+    priceCurrency: USD
+    billingCycle: monthly
+    annualPrice: 899.00
+    annualBillingCycle: monthly
+    features:
+      - Centralized customer feedback portal
+      - In-app feedback widget
+      - 1,000 unique users per month
+      - Idea status notifications
+      - Easy feedback capture tools
+      - Internal and external communications suite
+      - Quantitative enhancement of feedback data
+      - Rich taxonomy options
+      - Advanced filtering and sorting
+      - Customer segmentation
+      - Top-tier security and compliance
+      - Expert onboarding assistance
+      - 30-day free trial
+    limitations:
+      - No issue-management integrations (Jira, etc.)
+      - Limited to 1,000 unique users
+  - name: Internal Capture
+    description: Mid-tier plan designed for internal teams collecting feedback from customer-facing staff. Supports integrations with customer data and issue tracking systems.
+    url: https://www.uservoice.com/pricing/
+    price: 1299.00
+    priceCurrency: USD
+    billingCycle: monthly
+    annualPrice: 1199.00
+    annualBillingCycle: monthly
+    features:
+      - 3,000 unique users per month
+      - Jira integration
+      - Customer data connectivity (revenue, account attributes)
+      - Integrations with customer-facing team tools
+      - Internal feedback capture
+      - Advanced filtering and sorting
+      - Customer segmentation
+      - Top-tier security and compliance
+      - Expert onboarding assistance
+      - 30-day free trial
+    limitations:
+      - No public web portal
+      - No in-app widget
+      - No public status notifications
+  - name: Premium
+    description: Full-featured plan for product teams needing comprehensive feedback management with public portal, widget, status notifications, and customer data segmentation.
+    url: https://www.uservoice.com/pricing/
+    price: 1499.00
+    priceCurrency: USD
+    billingCycle: monthly
+    annualPrice: 1500.00
+    annualBillingCycle: monthly
+    annualTotal: 18000.00
+    features:
+      - Centralized customer feedback portal
+      - In-app feedback widget
+      - 5,000 unique users per month
+      - Idea status notifications
+      - Customer data segmentation and filtering
+      - Jira integration
+      - Customer data connectivity (revenue, account attributes)
+      - Internal and external communications suite
+      - Quantitative enhancement of feedback data
+      - Rich taxonomy options
+      - Advanced filtering and sorting
+      - Top-tier security and compliance
+      - Expert onboarding assistance
+      - 30-day free trial
+  - name: Enterprise
+    description: Custom enterprise plan for large organizations requiring unlimited users, advanced security, priority support, and tailored integrations.
+    url: https://www.uservoice.com/pricing/
+    price: 0.00
+    priceCurrency: USD
+    billingCycle: custom
+    customPricing: true
+    salesContact: true
+    features:
+      - Unlimited users (potentially)
+      - All Premium features
+      - Advanced security features
+      - Priority support
+      - Custom integrations
+      - Dedicated account management
+      - Custom onboarding
+      - SLA guarantees
+      - SSO and advanced authentication
+notes:
+  - All plans require minimum quarterly commitment; no monthly billing option
+  - Pricing never charged per seat
+  - 30-day free trial available on all plans
+  - Starting price referenced at $16,000 per year for annual contracts
+  - Most teams launch in 4-6 weeks; technical setup takes 1-2 weeks
+  - Bulk import via CSV or API available for data migration

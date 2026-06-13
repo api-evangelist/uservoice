@@ -1,0 +1,85 @@
+name: UserVoice FinOps Framework
+description: FinOps Framework 1.0 FOCUS-aligned cost management and optimization guidance for UserVoice API and platform usage. UserVoice uses a flat subscription model with no per-seat or per-API-call charges, making cost management primarily focused on plan selection relative to feedback volume and integration needs.
+specificationVersion: '1.0'
+url: https://www.uservoice.com/pricing/
+framework: FinOps FOCUS 1.0
+vendor: UserVoice
+pricingModel: flat-subscription
+billingModels:
+  - type: Subscription
+    description: Flat monthly or annual subscription fee covering all users and API calls. No per-seat, per-request, or consumption-based charges.
+    billingCycles:
+      - cycle: quarterly
+        description: Minimum commitment required. Paid upfront for 3 months.
+      - cycle: annual
+        description: Annual commitment with discounted monthly rate compared to quarterly.
+    currency: USD
+costDrivers:
+  - name: Feedback Volume
+    description: Monthly unique user feedback volume is the primary driver for plan tier selection. Higher user volumes require higher-tier plans.
+    type: usage-based-tier-selection
+    tiers:
+      - tier: Pro
+        limit: 1000
+        unit: unique users per month
+        monthlyCost: 999.00
+      - tier: Internal Capture
+        limit: 3000
+        unit: unique users per month
+        monthlyCost: 1299.00
+      - tier: Premium
+        limit: 5000
+        unit: unique users per month
+        monthlyCost: 1499.00
+      - tier: Enterprise
+        limit: unlimited
+        unit: unique users per month
+        monthlyCost: custom
+  - name: Integration Complexity
+    description: The number and type of integrations (Jira, CRM, customer data connectors) influences plan requirements.
+    type: feature-based-tier-selection
+  - name: Portal Access
+    description: Need for public-facing feedback portal and in-app widget access requires Pro or Premium plans; Internal Capture plan excludes these features.
+    type: feature-based-tier-selection
+optimization:
+  recommendations:
+    - name: Match Plan to Feedback Volume
+      description: Regularly audit monthly unique feedback submitters. Downgrade or upgrade plans based on actual usage versus plan limits to avoid over-provisioning.
+      impact: high
+    - name: Annual vs Quarterly Commitment
+      description: Annual billing reduces effective monthly cost by approximately $100-$300/month depending on plan tier. Commit annually once usage patterns are established.
+      impact: medium
+    - name: API Rate Limit Monitoring
+      description: Monitor X-Rate-Limit-Remaining headers to ensure integrations stay within plan limits. Optimize batch operations and use cursor-based pagination to reduce total API calls.
+      impact: medium
+    - name: Internal Capture vs Premium Evaluation
+      description: Evaluate whether public portal and status notifications are needed. Internal Capture at $1,299/month may serve internal teams without the overhead of Premium at $1,499/month.
+      impact: medium
+    - name: Free Trial Utilization
+      description: Use the 30-day free trial to validate feedback volume and integration needs before committing to a quarterly or annual plan.
+      impact: high
+    - name: Integration Consolidation
+      description: UserVoice's Jira integration and customer data connectors are available only on Internal Capture and Premium plans. Consolidating all feedback workflows through UserVoice may justify the premium tier versus maintaining separate tools.
+      impact: low
+costAllocation:
+  dimensions:
+    - name: Product Team
+      description: Allocate costs to product management teams consuming feedback data and roadmap features
+    - name: Engineering Team
+      description: Allocate API integration development and maintenance costs to engineering
+    - name: Customer Success
+      description: Allocate portal and helpdesk usage costs to customer success or support teams
+  tagging:
+    notes: UserVoice does not natively support cost tagging by team or project. Cost allocation should be managed externally through accounting or FinOps tooling.
+forecasting:
+  notes:
+    - UserVoice pricing is predictable due to flat subscription model; no variable API consumption costs
+    - Annual pricing starting at approximately $16,000/year for base tier
+    - Budget for 4-6 week onboarding period; technical setup 1-2 weeks
+    - Plan for potential upgrade costs if feedback volume grows beyond current tier limits
+budgeting:
+  minimumAnnualCommitment: 16000.00
+  currency: USD
+  trialAvailable: true
+  trialDuration: 30
+  trialDurationUnit: days

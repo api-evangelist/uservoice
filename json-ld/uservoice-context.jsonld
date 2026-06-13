@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uv": "https://www.uservoice.com/vocab#",
+    "aid": "https://apis.io/vocab#",
+
+    "Idea": "uv:Idea",
+    "Vote": "uv:Vote",
+    "Forum": "uv:Forum",
+    "Suggestion": "uv:Suggestion",
+    "Comment": "uv:Comment",
+    "Status": "uv:Status",
+    "Label": "uv:Label",
+    "User": "schema:Person",
+    "Supporter": "uv:Supporter",
+    "Ticket": "uv:Ticket",
+    "Article": "schema:Article",
+    "Category": "schema:Category",
+    "Note": "uv:Note",
+    "Segment": "uv:Segment",
+    "SmartVote": "uv:SmartVote",
+    "NpsRating": "uv:NpsRating",
+    "Webhook": "uv:Webhook",
+
+    "ideaId": "uv:ideaId",
+    "voteCount": "uv:voteCount",
+    "supporterCount": "uv:supporterCount",
+    "statusKey": "uv:statusKey",
+    "forumId": "uv:forumId",
+    "subdomain": "uv:subdomain",
+    "createdAt": "schema:dateCreated",
+    "updatedAt": "schema:dateModified",
+    "referenceNumber": "uv:referenceNumber",
+    "score": "uv:score",
+    "responseBody": "uv:responseBody",
+    "subscriberCount": "uv:subscriberCount",
+    "completedAt": "uv:completedAt",
+
+    "adminApi": {
+      "@id": "uv:adminApi",
+      "@type": "@id"
+    },
+    "helpdeskApi": {
+      "@id": "uv:helpdeskApi",
+      "@type": "@id"
+    },
+    "ideaCollectionApi": {
+      "@id": "uv:ideaCollectionApi",
+      "@type": "@id"
+    },
+
+    "provider": {
+      "@id": "schema:provider",
+      "@type": "@id"
+    },
+    "documentation": {
+      "@id": "schema:documentation",
+      "@type": "@id"
+    },
+    "baseUrl": {
+      "@id": "aid:baseUrl",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://www.uservoice.com/",
+      "@type": "schema:Organization",
+      "schema:name": "UserVoice",
+      "schema:description": "UserVoice is a product feedback and ideation platform enabling teams to gather, prioritize, and act on customer feedback to build better products.",
+      "schema:url": "https://www.uservoice.com/",
+      "schema:sameAs": [
+        "https://github.com/uservoice",
+        "https://www.linkedin.com/company/uservoice",
+        "https://twitter.com/uservoice"
+      ]
+    },
+    {
+      "@id": "https://developer.uservoice.com/docs/api/v2/",
+      "@type": "schema:WebAPI",
+      "schema:name": "UserVoice Admin API v2",
+      "schema:description": "REST API for administrative operations including data syncing, content moderation, exports, and managing feedback data.",
+      "schema:documentation": "https://developer.uservoice.com/docs/api/v2/",
+      "uv:baseUrl": "https://{subdomain}.uservoice.com/api/v2/admin/",
+      "uv:authMethod": "OAuth 2.0"
+    },
+    {
+      "@id": "https://developer.uservoice.com/docs/api/",
+      "@type": "schema:WebAPI",
+      "schema:name": "UserVoice Helpdesk API v1",
+      "schema:description": "Exposes core end-user and admin functionality for building client applications or integrations using OAuth 1.0a.",
+      "schema:documentation": "https://developer.uservoice.com/docs/api/",
+      "uv:baseUrl": "https://{subdomain}.uservoice.com/api/v1/",
+      "uv:authMethod": "OAuth 1.0a"
+    },
+    {
+      "@id": "https://developer.uservoice.com/docs/idea-collection-api/",
+      "@type": "schema:WebAPI",
+      "schema:name": "UserVoice Idea Collection API",
+      "schema:description": "Enables developers to create custom feedback capture experiences across web and mobile platforms using OAuth PKCE.",
+      "schema:documentation": "https://developer.uservoice.com/docs/idea-collection-api/",
+      "uv:authMethod": "OAuth 2.0 PKCE"
+    }
+  ]
+}

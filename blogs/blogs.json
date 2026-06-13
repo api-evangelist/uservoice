@@ -1,0 +1,78 @@
+{
+  "url": "https://www.uservoice.com/blog/",
+  "fetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "Why Strong Customer Relationships Are the Foundation of Better Product Roadmaps",
+      "url": "https://www.uservoice.com/blog/why-strong-customer-relationships-are-the-foundation-of-better-product-roadmaps",
+      "date": "2025-08-26",
+      "description": "Trust is the most reliable predictor of retention and growth. When customers see their feedback reflected in products, they remain loyal and become advocates."
+    },
+    {
+      "title": "The Compound Benefits of Continuous Learning in Product Management",
+      "url": "https://www.uservoice.com/blog/the-compound-benefits-of-continuous-learning-in-product-management",
+      "date": "2025-08-14",
+      "description": "Explores how feedback loops create competitive advantages and strengthen customer loyalty."
+    },
+    {
+      "title": "Improving your NPS through (effective) feedback programs",
+      "url": "https://www.uservoice.com/blog/improving-your-nps-through-effective-feedback-programs",
+      "date": "2025-07-31",
+      "description": "Addresses how broken product-customer relationships erode trust and demonstrates restoring this connection through structured feedback."
+    },
+    {
+      "title": "How AI is Revolutionizing Product Decision-Making, and Why Customer Feedback Still Matters",
+      "url": "https://www.uservoice.com/blog/how-ai-is-revolutionizing-product-decision-making-and-why-customer-feedback-still-matters-to-the-worlds-most-innovative-product-teams",
+      "date": "2025-02-25",
+      "description": "Examines AI's role in accelerating development while emphasizing customer feedback's continued importance in innovation."
+    },
+    {
+      "title": "The Case for the CPTO: Unified Product and Technology Leadership",
+      "url": "https://www.uservoice.com/blog/the-case-for-the-cpto-unified-product-and-technology-leadership",
+      "date": "2024-08-07",
+      "description": "Argues that integrating product and engineering leadership improves quality, speed, and retention."
+    },
+    {
+      "title": "Harnessing AI and Customer-Centric Strategies to Elevate Product Management in 2024",
+      "url": "https://www.uservoice.com/blog/harnessing-ai-customer-centric-strategies-product-management-2024",
+      "date": "2024-06-19",
+      "description": "Demonstrates how combining AI tools with customer-focused methods enhances value delivery."
+    },
+    {
+      "title": "Mastering Product Roadmaps: How to Make Better Decisions by Incorporating Customer Feedback",
+      "url": "https://www.uservoice.com/blog/how-to-make-better-decisions-by-incorporating-customer-feedback",
+      "date": "2024-03-01",
+      "description": "Provides frameworks for leveraging user input to create strategic, resonant product roadmaps."
+    },
+    {
+      "title": "How To: Best practices for product feedback at any company stage",
+      "url": "https://www.uservoice.com/blog/best-practices-for-product-feedback",
+      "date": "2023-12-07",
+      "description": "Outlines collection, analysis, and implementation strategies for continuous improvement."
+    },
+    {
+      "title": "Slaying the Churn Monster: Keep Your Customers Engaged and Happy",
+      "url": "https://www.uservoice.com/blog/slaying-the-churn-monster-keep-your-customers-engaged-and-happy-through-effective-product-management",
+      "date": "2023-10-04",
+      "description": "Details feedback-driven retention strategies and adaptive roadmap development."
+    },
+    {
+      "title": "The Top Product Management Prioritization Frameworks to Boost Your Product's Success",
+      "url": "https://www.uservoice.com/blog/the-top-product-management-prioritization-frameworks-to-boost-your-products-success",
+      "date": "2023-09-27",
+      "description": "Reviews prioritization methodologies for managing competing demands."
+    },
+    {
+      "title": "A Step-by-Step Guide To Creating User Stories",
+      "url": "https://www.uservoice.com/blog/a-step-by-step-guide-to-creating-user-stories",
+      "date": "2023-09-19",
+      "description": "Provides practical guidance on user story development using the 3Cs framework."
+    },
+    {
+      "title": "User Story Mapping: The Key To Building Better Products",
+      "url": "https://www.uservoice.com/blog/the-key-to-building-better-products",
+      "date": "2023-09-05",
+      "description": "Shows how mapping transforms traditional agile approaches and improves user experience outcomes."
+    }
+  ]
+}

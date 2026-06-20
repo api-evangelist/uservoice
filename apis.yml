@@ -1,6 +1,6 @@
 name: UserVoice
 description: UserVoice is a product feedback and ideation platform with a REST API for managing ideas, gathering votes, tracking status updates, and syncing user feedback with product roadmaps. It provides an Admin API v2 for administrative operations, a Helpdesk API for end-user and support functionality, and an Idea Collection API for custom feedback capture experiences across web and mobile platforms.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/uservoice/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -18,7 +18,7 @@ tags:
 apis:
   - name: UserVoice Admin API
     description: The UserVoice Admin API v2 provides a fast and easy way of working with your feedback data, enabling you to build client applications and custom integrations for administrative operations including data syncing, content moderation, and exports.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.uservoice.com/docs/api/v2/
     baseURL: https://SUBDOMAIN.uservoice.com/api/v2/admin/
     tags:
@@ -37,7 +37,7 @@ apis:
         url: https://developer.uservoice.com/
   - name: UserVoice Helpdesk API
     description: The UserVoice Helpdesk API exposes the core end-user and admin functionality of UserVoice, making it easy to build client applications or integrations with your own systems using OAuth 1.0a authentication.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.uservoice.com/docs/api/
     baseURL: https://SUBDOMAIN.uservoice.com/api/v1/
     tags:
@@ -56,7 +56,7 @@ apis:
         url: https://developer.uservoice.com/
   - name: UserVoice Idea Collection API
     description: The UserVoice Idea Collection API enables developers to create custom experiences for capturing feedback from users across multiple platforms including web and mobile, using OAuth Authorization Code Flow with PKCE.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.uservoice.com/docs/idea-collection-api/
     baseURL: https://SUBDOMAIN.uservoice.com/
     tags:

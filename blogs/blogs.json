@@ -1,6 +1,17 @@
 {
   "url": "https://www.uservoice.com/blog/",
-  "fetched": "2026-06-14T20:42:17Z",
+  "repo": "uservoice",
+  "fetched": "2026-06-27T13:19:11Z",
+  "agent_pulled": "2026-06-27",
+  "feeds": [
+    {
+      "source": "https://www.uservoice.com/blog/",
+      "feed_url": "",
+      "saved": 0,
+      "method": "agent-scrape"
+    }
+  ],
+  "post_count": 0,
   "posts": [
     {
       "title": "Why Strong Customer Relationships Are the Foundation of Better Product Roadmaps",
@@ -74,16 +85,5 @@
       "date": "2023-09-05",
       "description": "Shows how mapping transforms traditional agile approaches and improves user experience outcomes."
     }
-  ],
-  "repo": "uservoice",
-  "feeds": [
-    {
-      "source": "https://twitter.com/uservoice",
-      "feed_url": "https://twitter.com/uservoice",
-      "title": "",
-      "saved": 0,
-      "method": "none"
-    }
-  ],
-  "post_count": 0
+  ]
 }

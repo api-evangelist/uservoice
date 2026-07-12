@@ -71,6 +71,8 @@ apis:
       - FN: UserVoice Developer Support
         url: https://developer.uservoice.com/
 common:
+  - type: DomainSecurity
+    url: security/uservoice-domain-security.yml
   - type: Website
     url: https://www.uservoice.com/
   - type: Documentation

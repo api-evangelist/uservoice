@@ -1,17 +1,18 @@
 {
   "url": "https://www.uservoice.com/blog/",
   "repo": "uservoice",
-  "fetched": "2026-06-27T13:19:11Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "agent_pulled": "2026-06-27",
   "feeds": [
     {
-      "source": "https://www.uservoice.com/blog/",
-      "feed_url": "",
+      "source": "https://twitter.com/uservoice",
+      "feed_url": "https://twitter.com/uservoice",
+      "title": "",
       "saved": 0,
-      "method": "agent-scrape"
+      "method": "none"
     }
   ],
-  "post_count": 0,
+  "post_count": 1,
   "posts": [
     {
       "title": "Why Strong Customer Relationships Are the Foundation of Better Product Roadmaps",

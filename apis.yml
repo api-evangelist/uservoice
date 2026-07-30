@@ -1,6 +1,18 @@
 name: UserVoice
 description: UserVoice is a product feedback and ideation platform with a REST API for managing ideas, gathering votes, tracking status updates, and syncing user feedback with product roadmaps. It provides an Admin API v2 for administrative operations, a Helpdesk API for end-user and support functionality, and an Idea Collection API for custom feedback capture experiences across web and mobile platforms.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: true
+  try_now: false
+  public: false
+  label: Freemium (free trial)
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/uservoice.png
 url: https://raw.githubusercontent.com/api-evangelist/uservoice/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'

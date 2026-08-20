@@ -26,6 +26,15 @@ tags:
   - Voting
   - Feature Requests
   - User Research
+  - Software-as-a-Service
+tags_raw:
+  - Product Feedback
+  - Idea Management
+  - Customer Feedback
+  - Product Roadmap
+  - Voting
+  - Feature Requests
+  - User Research
   - SaaS
 apis:
   - name: UserVoice Admin API
@@ -34,6 +43,12 @@ apis:
     humanURL: https://developer.uservoice.com/docs/api/v2/
     baseURL: https://SUBDOMAIN.uservoice.com/api/v2/admin/
     tags:
+      - Admin
+      - Feedback
+      - Ideas
+      - User
+      - Roadmaps
+    tags_raw:
       - Admin
       - Feedback
       - Ideas
@@ -53,6 +68,12 @@ apis:
     humanURL: https://developer.uservoice.com/docs/api/
     baseURL: https://SUBDOMAIN.uservoice.com/api/v1/
     tags:
+      - Help Desk
+      - Support
+      - Tickets
+      - User
+      - Authentication
+    tags_raw:
       - Helpdesk
       - Support
       - Tickets

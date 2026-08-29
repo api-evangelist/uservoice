@@ -1,5 +1,16 @@
 name: UserVoice
 description: UserVoice is a product feedback and ideation platform with a REST API for managing ideas, gathering votes, tracking status updates, and syncing user feedback with product roadmaps. It provides an Admin API v2 for administrative operations, a Helpdesk API for end-user and support functionality, and an Idea Collection API for custom feedback capture experiences across web and mobile platforms.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown

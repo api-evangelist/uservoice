@@ -58,7 +58,7 @@ apis:
       - Feedback
       - Ideas
       - User
-      - Roadmaps
+      - Roadmap
     tags_raw:
       - Admin
       - Feedback
@@ -79,7 +79,7 @@ apis:
     humanURL: https://developer.uservoice.com/docs/api/
     baseURL: https://SUBDOMAIN.uservoice.com/api/v1/
     tags:
-      - Help Desk
+      - Helpdesk
       - Support
       - Tickets
       - User

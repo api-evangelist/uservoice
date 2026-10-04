@@ -81,7 +81,7 @@ apis:
     tags:
       - Help Desk
       - Support
-      - Tickets
+      - Ticketing
       - User
       - Authentication
     tags_raw:

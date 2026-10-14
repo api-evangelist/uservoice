@@ -1,5 +1,21 @@
 generated: '2026-10-14'
 edges:
+- partner_name: Atlassian Marketplace
+  partner: atlassian
+  partner_match: aggregator
+  type: marketplace
+  marketplace: atlassian
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://marketplace.atlassian.com/vendors/1211007/uservoice
+  listing_count: 2
+  apps:
+  - UserVoice for Jira
+  - UserVoice EU for Jira
+  publisher_name: UserVoice
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
 - partner_name: Twilio Segment
   partner: segment
   partner_match: aggregator
@@ -26,22 +42,6 @@ edges:
       - Page
   detected_by: sweep-cdp.py
   first_seen: '2026-10-14'
-- partner_name: Atlassian Marketplace
-  partner: atlassian
-  partner_match: aggregator
-  type: marketplace
-  marketplace: atlassian
-  channel: partner-built
-  relationship: platform-app
-  direction: third-party
-  evidence: https://marketplace.atlassian.com/vendors/1211007/uservoice
-  listing_count: 2
-  apps:
-  - UserVoice for Jira
-  - UserVoice EU for Jira
-  publisher_name: UserVoice
-  detected_by: sweep-devtools.py
-  detected: '2026-10-14'
 method: searched
 checked:
 - https://marketplace.atlassian.com/

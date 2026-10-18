@@ -81,7 +81,7 @@
     - alpha
     in_cloud: true
     builder: unknown (community connector; contributor not in the record)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: uservoice-fivetran
   label: Fivetran
@@ -107,7 +107,7 @@
     - connectors/applications/uservoice
     vendor_link: https://www.uservoice.com
     builder: Fivetran
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: uservoice-meltano
   label: Meltano
@@ -138,7 +138,7 @@
     - bronze
     - unknown
     builder: 'community (Meltano Hub variant maintainers: dbt-labs, singer-io)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: uservoice-microsoft-teams-own
   label: Microsoft Teams (own)
